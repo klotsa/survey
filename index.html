@@ -9,15 +9,58 @@
   </head>
   <body>
     <div class="container">
+      <h1>Survey about favorite things</h1>
       <form id="survey">
         <div class="form-group">
-          <label for="name">Enter Your Full Name</label>
+          <label for="name">What is your name?</label>
           <input id="name" class="form-control" type="text">
         </div>
-
-        <button type="submit" class="btn">Send me a letter!</button>
+        <div class="form-group">
+          <label for="name">What is your favorite food?</label>
+          <select class="form-control" id="food">
+            <option>Sushi</option>
+            <option>Candy</option>
+            <option>Ketchup</option>
+            <option>Tacos</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <label for="team">What is your favorite sports team?</label>
+            <label>
+              <input type="radio" name="team" value="Geelong Cats" checked>
+              Geelong Cats
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="team" value="Fremantle Dockers">
+              Fremantle Dockers
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="team" value="St. Kilda Saints">
+              St. Kilda Saints
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="born">What is your date of birth</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <button type="submit" class="btn">Submit</button>
       </form>
       <div id="surveyOutput">
+        <p class="name"></p>
+        <p class="food"></p>
+        <p class="team"></p>
+        <p class="born"></p>
+        <p class="color"></p>
       </div>
     </div>
   </body>
